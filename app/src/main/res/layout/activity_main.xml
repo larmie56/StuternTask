@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view_card_number"
+        android:layout_width="404dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_card_number">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editText_first_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="4599"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/editText_second_number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/editText_second_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="7568"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/editText_third_number"
+                    app:layout_constraintStart_toEndOf="@id/editText_first_number"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/editText_third_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="6354"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/editText_fourth_number"
+                    app:layout_constraintStart_toEndOf="@id/editText_second_number"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/editText_fourth_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="4542"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView_visa"
+                    app:layout_constraintStart_toEndOf="@id/editText_third_number"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView_visa"
+                    android:layout_width="113dp"
+                    android:layout_height="47dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/visa_image" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view_cardholder_name"
+        android:layout_width="404dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_cardholder_name">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cardview_text_cardholder_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:text="Rideula Zaman"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view_cvc_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_cvc_code">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cardview_text_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="839"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view_expiry_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/card_view_expiry_year"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_expire_on">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/backgroundTint"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cardview_text_expiry_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text="mm"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view_expiry_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@id/card_view_expiry_month"
+        app:layout_constraintTop_toBottomOf="@id/text_view_expire_on">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/backgroundTint"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cardview_text_expiry_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text="yyyy"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/text_view_payment_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Payment Info."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_cardholder_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Cardholder Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_payment_info" />
+
+    <TextView
+        android:id="@+id/text_view_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Card Number"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view_cardholder_name" />
+
+    <TextView
+        android:id="@+id/text_view_expire_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Expire on"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_card_number" />
+
+    <TextView
+        android:id="@+id/text_view_cvc_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="CVC Code"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/card_view_expiry_month"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <Button
+        android:id="@+id/button_make_a_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/backgroundTint"
+        android:text="MAKE A PAYMENT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_cvc_code" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
